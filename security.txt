@@ -1,0 +1,22 @@
+# Clone repo (if not already)
+git clone https://github.com/montinode/solana-security-txt.monti.git
+cd solana-security-txt.monti
+
+# Create file
+echo '# Solana Security Contact Information
+Contact: mailto:security@montinode.com
+Expires: 2027-04-28T23:59:59z
+Encryption: https://montinode.com/pgp-key.txt
+Acknowledgments: https://montinode.com/hall-of-fame
+Preferred-Languages: en
+Canonical: https://github.com/montinode/solana-security-txt.monti/security.txt
+Policy: https://montinode.com/security-policy
+Hiring: https://montinode.com/careers
+
+# Solana-Specific: Report validator vulnerabilities, RPC exploits, or consensus issues.
+# Bug Bounty: Up to 10,000 SOL for critical finds.' > security.txt
+
+# Stage, commit, push
+git add security.txt
+git commit -m "Add Solana security.txt file"
+git push origin master
