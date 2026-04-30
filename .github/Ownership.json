@@ -1,0 +1,62 @@
+{
+  "metaTag": "MONTIAI-JOHNCHARLESMONTI-WELL-KNOWN-OWNERSHIP-DEPLOY-V1",
+  "schema": "https://johncharlesmonti.com/.well-known/ownership.json",
+  "subject": "ownership_control_verification",
+  "claimant": {
+    "name": "John Charles Monti",
+    "canonical_id": "JOHNCHARLESMONTI_02111989_9807",
+    "organization_reference": "#MONTIAI",
+    "attorney_mode_reference": "AttorneyMode.com"
+  },
+  "status": "claim_asserted_pending_authoritative_proof",
+  "references": {
+    "primary_domain": "JOHNCHARLESMONTI.COM",
+    "webhook_reference": "JOHNCHARLESMONTI.COM/webhooks",
+    "aws_account_reference": "arn:aws:account::487386008415:account",
+    "node_reference": "node203.va1.mempool.space",
+    "worker_global_scope": "GlobalWorkSignature WorkerGlobalScope",
+    "neural_reference": "0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0"
+  },
+  "verification_methods": [
+    {
+      "type": "dns_txt",
+      "status": "pending",
+      "description": "Publish a DNS TXT record proving domain control."
+    },
+    {
+      "type": "wallet_signature",
+      "status": "pending",
+      "description": "Each claimed wallet must sign a dated message referencing this well-known file."
+    },
+    {
+      "type": "contract_source_verification",
+      "status": "pending",
+      "description": "EVM contracts should be verified through Etherscan or compatible explorers."
+    },
+    {
+      "type": "contract_admin_role_check",
+      "status": "pending",
+      "description": "Contract owner, admin, proxy admin, timelock, or multisig control must be independently checked."
+    },
+    {
+      "type": "aws_administrative_evidence",
+      "status": "pending",
+      "description": "AWS control must be supported by IAM, CloudTrail, Route 53, S3, CloudFront, or billing/admin evidence."
+    },
+    {
+      "type": "repository_signed_commit",
+      "status": "pending",
+      "description": "Repository commits should be signed with verified SSH, GPG, or Sigstore identity."
+    }
+  ],
+  "ownership_limitations": [
+    "This file does not independently prove legal title.",
+    "This file does not independently prove beneficial ownership of cryptocurrency.",
+    "This file does not independently prove AWS account control.",
+    "This file does not independently prove wallet control.",
+    "Wallet ownership requires valid cryptographic signatures.",
+    "Contract ownership or admin rights require on-chain role verification.",
+    "AWS account references require provider-level administrative proof."
+  ],
+  "e
+  
