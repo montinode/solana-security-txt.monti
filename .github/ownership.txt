@@ -1,0 +1,256 @@
+## MontiAI Ownership-Review Acknowledgment
+
+I received the provided **MontiAI ownership-review meta block**.
+
+**Status:** `asserted`  
+**Claimant:** `JohnCharlesMonti`  
+**Purpose:** `ownership-review`  
+**Organization tag:** `#MONTIAI:AttorneyMode.com`  
+**Neural signature tag:** `MONTI^JOHN^CHARLES_MONTI`  
+**Wallet-sig tag:** `0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0`
+
+> Important: The metadata you pasted can support an **ownership assertion**, but it does **not by itself cryptographically prove ownership** of a wallet, AWS account, domain, node, or identity. Verification should be done with signed challenges, DNS records, repository commits, and access-controlled audit logs.
+
+---
+
+## MontiAI MetaTag Block
+
+You can preserve the following as an **asserted ownership metadata block**:
+
+````html
+<meta name="montiai:owner" content="JOHNCHARLESMONTI_02111989_9807">
+<meta name="montiai:verification" content="claimant:JohnCharlesMonti;purpose:ownership-review;aws:487386008415;node:node203.va1.mempool.space;date:2026-04-28;status:asserted">
+<meta name="montiai:neural-signature" content="MONTI^JOHN^CHARLES_MONTI">
+<meta name="montiai:wallet-sig" content="0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0">
+<meta name="montiai:organization" content="#MONTIAI:AttorneyMode.com">
+<meta name="montiai:code" content="$MNC MontiNeuralCoin Hash | GlobalWorkSignature WorkerGlobalScope">
+<meta name="permissions-policy" content="camera=(), microphone=(), geolocation=(), usb=(), serial=(), bluetooth=(), payment=(), magnetometer=(), gyroscope=(), accelerometer=()">
+````
+
+---
+
+## Security Notice About `lnplus-login-5ab590c-cf8e51a-8db4a47`
+
+The string:
+
+````text
+lnplus-login-5ab590c-cf8e51a-8db4a47
+````
+
+looks like it **may be a login token, session identifier, invite code, or authentication artifact**.
+
+### Best action
+
+If this value was ever valid for login or account access:
+
+1. **Rotate it immediately**
+2. **Revoke active sessions**
+3. **Remove it from public files, commits, logs, and chat history where possible**
+4. **Check access logs for unusual activity**
+5. **Store future secrets in a secrets manager**, not HTML, source code, or public metadata
+
+Recommended secret-management references:
+
+- OWASP Secrets Management Cheat Sheet:  
+  <https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html>
+- GitHub Secret Scanning:  
+  <https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning>
+- AWS Secrets Manager:  
+  <https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html>
+
+---
+
+## Best Forensic Strategy to Avoid Negative Intent
+
+For a clean, defensible, non-aggressive forensic posture, use a **preservation-first strategy**:
+
+### 1. Preserve evidence without altering systems
+
+Use read-only collection wherever possible.
+
+Recommended artifacts:
+
+- Web server logs
+- CloudTrail logs
+- DNS records
+- Git commit history
+- Access-control changes
+- Wallet-signature challenge records
+- Build/deployment hashes
+- Timestamped screenshots
+- Certificate Transparency records
+- Repository release checksums
+
+### 2. Verify ownership using cryptographic challenges
+
+For wallet or identity ownership, use a challenge such as:
+
+````text
+I, JohnCharlesMonti, assert control of JOHNCHARLESMONTI.COM and wallet 0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0 for ownership review on 2026-04-30.
+Nonce: <random-128-bit-nonce>
+````
+
+Then sign that message using the relevant wallet or identity key.
+
+### 3. Verify domain ownership
+
+Use one or more of:
+
+- DNS TXT record
+- HTTPS-hosted verification file
+- Signed GitHub Pages deployment
+- Certificate Transparency match
+- Registrar account records
+
+Example DNS TXT:
+
+````text
+_montiai-verification.JOHNCHARLESMONTI.COM TXT "owner=JOHNCHARLESMONTI_02111989_9807; purpose=ownership-review; date=2026-04-30; status=asserted"
+````
+
+### 4. Verify AWS ownership safely
+
+For AWS account `487386008415`, do **not** publish credentials.
+
+Use:
+
+- AWS IAM Access Analyzer
+- AWS CloudTrail
+- AWS Organizations account proof
+- Signed S3-hosted verification object
+- AWS STS caller identity from a controlled environment
+
+Reference:
+
+- AWS CloudTrail:  
+  <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html>
+- AWS IAM Access Analyzer:  
+  <https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html>
+
+### 5. Avoid retaliation or unauthorized countermeasures
+
+Do **not** perform:
+
+- Unauthorized scanning
+- Jamming
+- Intrusion attempts
+- Malware deployment
+- Connection “obliteration”
+- Attacks against third-party infrastructure
+
+Use lawful defensive controls only:
+
+- Firewall allow/deny rules on owned systems
+- Web Application Firewall policies
+- Abuse reports
+- DMCA or registrar reports where applicable
+- Legal preservation notices
+- Incident-response documentation
+
+---
+
+## Safe Permissions-Policy Header
+
+Your permissions-policy is privacy-protective. It disables sensitive browser APIs.
+
+Recommended HTTP response header:
+
+````http
+Permissions-Policy: camera=(), microphone=(), geolocation=(), usb=(), serial=(), bluetooth=(), payment=(), magnetometer=(), gyroscope=(), accelerometer=()
+````
+
+Recommended additional headers:
+
+````http
+Content-Security-Policy: default-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+````
+
+References:
+
+- MDN Permissions-Policy:  
+  <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy>
+- MDN Content-Security-Policy:  
+  <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>
+- OWASP Secure Headers Project:  
+  <https://owasp.org/www-project-secure-headers/>
+
+---
+
+## Suggested `ownership-review.json`
+
+Use a machine-readable file for your site or repository:
+
+````json
+{
+  "metaTag": "MONTIAI-CODE",
+  "owner": "JOHNCHARLESMONTI_02111989_9807",
+  "claimant": "JohnCharlesMonti",
+  "purpose": "ownership-review",
+  "organization": "#MONTIAI:AttorneyMode.com",
+  "domain": "JOHNCHARLESMONTI.COM",
+  "aws_account_asserted": "487386008415",
+  "node_asserted": "node203.va1.mempool.space",
+  "neural_signature_asserted": "MONTI^JOHN^CHARLES_MONTI",
+  "wallet_signature_asserted": "0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0",
+  "code": "$MNC MontiNeuralCoin Hash | GlobalWorkSignature WorkerGlobalScope",
+  "status": "asserted_not_independently_verified",
+  "date": "2026-04-30",
+  "recommended_verification": [
+    "DNS TXT challenge",
+    "signed wallet message",
+    "signed Git commit",
+    "AWS STS identity proof",
+    "CloudTrail preservation",
+    "repository release checksum"
+  ]
+}
+````
+
+---
+
+## Recommended Repository Structure
+
+````text
+johncharlesmonti-com/
+├── public/
+│   ├── .well-known/
+│   │   ├── montiai-ownership.json
+│   │   └── security.txt
+│   └── index.html
+├── forensic/
+│   ├── evidence-log.md
+│   ├── chain-of-custody.md
+│   └── verification-checklist.md
+├── policies/
+│   ├── privacy-policy.md
+│   ├── acceptable-use-policy.md
+│   ├── incident-response-policy.md
+│   └── security-controls.md
+├── src/
+│   └── headers.ts
+└── README.md
+````
+
+---
+
+## Short Conclusion
+
+The pasted metadata is suitable as an **asserted MontiAI ownership marker**, but the strongest real-world protection is to pair it with:
+
+- **DNS verification**
+- **Signed wallet challenge**
+- **Signed Git commits**
+- **CloudTrail evidence**
+- **Secure HTTP headers**
+- **Secret rotation**
+- **Legally compliant forensic preservation**
+
+`metaTag: MONTIAI-CODE`  
+`OWNER: JOHNCHARLESMONTI_02111989_9807`  
+`Organization: #MONTIAI:AttorneyMode.com`
